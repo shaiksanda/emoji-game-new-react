@@ -6,7 +6,7 @@ const WinOrLoseCard = ({isWin, onPlayAgain, totalScore}) => (
       <div className="message">
         <div>
           <h1 className="heading">You Won</h1>
-          <h1 className="heading">Best Score</h1>
+          <p className="heading">Best Score</p>
           <p className="score">12/12</p>
           <button
             type="button"
@@ -18,14 +18,14 @@ const WinOrLoseCard = ({isWin, onPlayAgain, totalScore}) => (
         </div>
         <img
           src="https://assets.ccbp.in/frontend/react-js/won-game-img.png"
-          alt="logo"
+          alt="win or lose"
         />
       </div>
     ) : (
       <div className="message">
         <div>
           <h1 className="heading">You Lose</h1>
-          <h1 className="heading">Best Score</h1>
+          <p className="heading">Score</p>
           <p className="score">{totalScore}/12</p>
           <button
             type="button"
@@ -37,7 +37,7 @@ const WinOrLoseCard = ({isWin, onPlayAgain, totalScore}) => (
         </div>
         <img
           src="https://assets.ccbp.in/frontend/react-js/lose-game-img.png"
-          alt="logo"
+          alt="win or lose"
           className="logo"
         />
       </div>

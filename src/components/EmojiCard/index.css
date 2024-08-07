@@ -60,3 +60,8 @@
     height: 90px;
   }
 }
+
+.image-button {
+  background-color: transparent;
+  border: none;
+}
